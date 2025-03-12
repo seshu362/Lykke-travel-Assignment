@@ -1,0 +1,59 @@
+/* src/components/Customize/index.css */
+.customize {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    
+  }
+  
+  .itinerary-steps {
+    margin-top: 20px;
+  }
+  
+  .itinerary-steps h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .itinerary-steps input,
+  .itinerary-steps select {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .navigation-buttons {
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #ff3b2f;
+  }
+  
+  @media (max-width: 768px) {
+    .customize {
+      padding: 15px;
+    }
+  
+    .itinerary-steps input,
+    .itinerary-steps select {
+      width: 100%;
+    }
+  }

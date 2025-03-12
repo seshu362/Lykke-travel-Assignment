@@ -1,0 +1,28 @@
+/* src/components/SearchBar/index.css */
+.search-bar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar input {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }

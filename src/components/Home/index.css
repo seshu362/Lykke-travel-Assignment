@@ -1,0 +1,17 @@
+/* src/components/Home/index.css */
+.home {
+    padding: 20px;
+  }
+  
+  .destination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .destination-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }

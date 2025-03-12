@@ -1,0 +1,66 @@
+/* src/components/DestinationCard/index.css */
+.destination-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    cursor: pointer;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .destination-card:hover img {
+    opacity: 0.9;
+  }
+  
+  .destination-card h3 {
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .destination-card button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .destination-card button:hover {
+    background-color: #ff3b2f;
+  }
+  
+  @media (max-width: 768px) {
+    .destination-card {
+      margin: 10px;
+    }
+  
+    .destination-card img {
+      height: 150px;
+    }
+  
+    .destination-card h3 {
+      font-size: 18px;
+    }
+  
+    .destination-card button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
