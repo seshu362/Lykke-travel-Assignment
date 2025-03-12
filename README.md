@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# React Travel Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive travel website built with React. This project allows users to explore popular destinations, customize their trips, and get in touch with travel experts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Home Page**:
+   - Displays a carousel of banners with a search bar.
+   - Shows a list of popular destinations with an "Explore" button.
 
-### `npm start`
+2. **Customize Page**:
+   - Multi-step form for customizing trips:
+     - Select the number of days.
+     - Choose who is traveling (solo, couple, family).
+     - Configure room options.
+     - Display a confirmation message.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Destination Page**:
+   - Displays available trips for a selected destination.
+   - Includes a "Talk to an Expert" button that redirects to the contact page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Contact Page**:
+   - A form for users to get in touch:
+     - Name.
+     - Contact Number.
+     - Email.
+     - Budget (dropdown).
 
-### `npm test`
+5. **Responsive Design**:
+   - Works seamlessly on both desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Modern UI**:
+   - Includes hover effects, transitions, and gradients for a polished look.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: Frontend library for building user interfaces.
+- **React Router**: For handling routing between pages.
+- **CSS**: For styling the components.
+- **Fetch API**: For fetching data from external APIs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Check out the live demo of the project: [React Travel Website](#) *(Replace with your deployment link)*
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Run the following command to install the required Node.js packages::
+```bash
+   npm install
+```
+2. Now that you have installed the dependencies, run the following command to start the React development server:
+```bash
+   npm start
+```
+3. Open the app:
+```
+  Visit http://localhost:3000 in your browser.
+```
+## Folder Structure
+```
+  src/
+  ├── components/
+  │   ├── Banner/
+  │   ├── DestinationCard/
+  │   ├── SearchBar/
+  │   ├── ItinerarySteps/
+  │   ├── TripCard/
+  │   ├── ContactForm/
+  │   ├── Home/
+  │   ├── Customize/
+  │   ├── Destination/
+  │   ├── Contact/
+  │   └── App.js
+  ├── App.css
+  └── index.js
+```
+## APIs Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Banners API
+**Endpoint:**  
+`https://json-data-1wm2.onrender.com/banners`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Description:**  
+Returns a list of banners for the carousel.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### Destinations API
+**Endpoint:**  
+`https://json-data-1wm2.onrender.com/featured-destination`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Description:**  
+Returns a list of popular destinations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Trips API
+**Endpoint:**  
+`https://json-data-1wm2.onrender.com/destination/[handle]`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Description:**  
+Returns a list of trips for a specific destination.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How It Works
 
-### Making a Progressive Web App
+### Home Page
+- Fetches banners and destinations from the APIs.
+- Displays a carousel of banners and a list of destination cards.
+- Clicking "Explore" on a destination card redirects to the destination page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Customize Page
+- A multi-step form allows users to customize their trip.
+- After completing the form, the user is redirected to the home page.
 
-### Advanced Configuration
+### Destination Page
+- Fetches trips for the selected destination.
+- Displays trip details and a "Talk to an Expert" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Contact Page
+- A form for users to get in touch.
+- After submission, the user is redirected to the home page.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
